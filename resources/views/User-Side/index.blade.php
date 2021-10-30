@@ -1,169 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
-
-
-<!-- Mirrored from template.hasthemes.com/bunzo/bunzo/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Oct 2021 17:25:37 GMT -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bunzo - Blog Bootstrap 5 HTML Template</title>
-    <meta name="description" content="Bunzo is one of the most popular blog template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="#" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Bunzo - Blog HTML Template" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:image" content="" />
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png">
-
-    <!-- CSS
-        ============================================ -->
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">  -->
-
-    <!-- Gordita Fonts CSS -->
-    <link rel="stylesheet" href="assets/fonts/gordita-fonts.css" />
-
-    <!-- Icofont CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" /> -->
-
-    <!-- Light gallery CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css"> -->
-
-    <!-- Swiper bundle CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" /> -->
-
-    <!-- AOS CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/aos.css"> -->
-
-
-    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
-
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-
-
-
-<body class="theme-color-five">
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--========  header area =========-->
-    <header class="header-five">
-        <div class="header-top">
-            <div class="container-fluid container-custom-150">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-8">
-                        <p class="time-offer">Get all 68 premium WordPress themes full free! <span class="offer-text">Limited time offer.</span> <a href="#" class="get-offer-btn">Get it now</a> </p>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <ul class="social-share-area social-share-border-outline">
-                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i class="icofont-skype"></i></a></li>
-                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom-area bg-gray">
-            <div class="container-fluid container-custom-150">
-                <div class="row align-items-center">
-                    <div class="col-lg-9 col-md-6 col-5">
-                        <div class="header-five-left-side-box">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/logo-5-black.png" alt="" />
-                                </a>
-                            </div>
-                            <div class="main-menu-area text-center ml-3">
-                                <nav class="navigation-menu">
-                                    <ul>
-                                        <li class="has-children">
-                                            <a href="index.html"><span>Home</span></a>
-                                            <ul class="submenu">
-                                                <li><a href="index-2.html"><span>Home Two</span></a></li>
-                                                <li><a href="index-3.html"><span>Home Three</span></a></li>
-                                                <li><a href="index-4.html"><span>Home Four</span></a></li>
-                                                <li><a href="index-5.html"><span>Home Five</span></a></li>
-                                                <li><a href="index-6.html"><span>Home Six</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html"><span>About</span></a>
-                                        </li>
-                                        <li class="has-children"><a href="category.html"><span>Category</span></a>
-                                            <ul class="submenu">
-                                                <li><a href="category.html"><span>Category List</span></a> </li>
-                                                <li><a href="category-grid.html"><span>Category Grid</span></a> </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children">
-                                            <a href="#"><span>Pages</span></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-details.html"><span>Blog Details</span></a> </li>
-                                                <li><a href="blog-details-two.html"><span>Blog Details Two</span></a> </li>
-                                                <li><a href="error-404.html"><span>Error 404</span></a> </li>
-                                                <li><a href="faq.html"><span>FAQ's</span></a> </li>
-                                                <li><a href="author-post.html"><span>Author post</span></a> </li>
-                                                <li><a href="register.html"><span>Register</span></a> </li>
-                                                <li><a href="write-post.html"><span>Write Post</span></a> </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact-us.html"><span>Contact </span></a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-7">
-                        <div class="header-five-right-side">
-                            <div class="d-sm-block d-none">
-                                <a href="login.html" class="log-in-action-btn">
-                                    Log in
-                                </a>
-                            </div>
-                            <a href="register.html" class="sign-up-action-button btn-bg-5 btn-large btn">
-                                Sign Up Free
-                            </a>
-                            <!-- mobile menu -->
-                            <div class="mobile-navigation-icon d-block d-lg-none" id="mobile-menu-trigger">
-                                <i></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--======== End of header area  =========-->
-
-
-
-
+<x-layout>
     <div id="main-wrapper">
         <div class="site-wrapper-reveal">
 
@@ -217,7 +52,7 @@
                                 <div class="row align-items-center" data-aos="fade-up">
                                     <div class="col-lg-6 col-md-6">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/trending-todys/01-trending-tody.jpg" alt="">
+                                            <img src="images/trending-todys/01-trending-tody.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -250,7 +85,7 @@
                                 <div class="row align-items-center" data-aos="fade-up">
                                     <div class="col-lg-6 col-md-6">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/trending-todys/01-trending-tody.jpg" alt="">
+                                            <img src="images/trending-todys/01-trending-tody.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -283,7 +118,7 @@
                                 <div class="row align-items-center" data-aos="fade-up">
                                     <div class="col-lg-6 col-md-6">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/trending-todys/01-trending-tody.jpg" alt="">
+                                            <img src="images/trending-todys/01-trending-tody.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -326,19 +161,19 @@
                             <div class="swiper-container trusted-partners-slider-active">
                                 <div class="swiper-wrapper trusted-partners-slider-wrap">
                                     <div class="swiper-slide">
-                                        <a href="#!"><img src="assets/images/partners/01-partners.png" alt="" /></a>
+                                        <a href="#!"><img src="images/partners/01-partners.png" alt="" /></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#!"><img src="assets/images/partners/02-partners.png" alt="" /></a>
+                                        <a href="#!"><img src="images/partners/02-partners.png" alt="" /></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#!"><img src="assets/images/partners/03-partners.png" alt="" /></a>
+                                        <a href="#!"><img src="images/partners/03-partners.png" alt="" /></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#!"><img src="assets/images/partners/04-partners.png" alt="" /></a>
+                                        <a href="#!"><img src="images/partners/04-partners.png" alt="" /></a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#!"><img src="assets/images/partners/02-partners.png" alt="" /></a>
+                                        <a href="#!"><img src="images/partners/02-partners.png" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +207,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/01-recent-article.jpg" alt="" />
+                                            <img src="images/recent-article/01-recent-article.jpg" alt="" />
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -397,7 +232,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/02-recent-article.jpg" alt="">
+                                            <img src="images/recent-article/02-recent-article.jpg" alt="">
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -422,7 +257,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/03-recent-article.jpg" alt="">
+                                            <img src="images/recent-article/03-recent-article.jpg" alt="">
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -448,7 +283,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/04-recent-article.jpg" alt="" />
+                                            <img src="images/recent-article/04-recent-article.jpg" alt="" />
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -473,7 +308,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/05-recent-article.jpg" alt="">
+                                            <img src="images/recent-article/05-recent-article.jpg" alt="">
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -498,7 +333,7 @@
                                     <!-- Single Most Populer Item Start -->
                                     <div class="single-most-populer-item" data-aos="fade-up">
                                         <a href="blog-details.html" class="most-populer-thum">
-                                            <img src="assets/images/recent-article/06-recent-article.jpg" alt="">
+                                            <img src="images/recent-article/06-recent-article.jpg" alt="">
                                         </a>
                                         <div class="most-populer-content">
                                             <div class="most-populer-post-author">
@@ -549,7 +384,7 @@
                                     <div class="single-archive-post" data-aos="fade-up">
                                         <div class="archive-post-thum">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/archive-post/01.jpg" alt="">
+                                                <img src="images/archive-post/01.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="archive-post-content">
@@ -558,7 +393,7 @@
                                             </h6>
                                             <div class="archive-post-meta">
                                                 <span class="post-date">
-                                                <i class="icofont-ui-calendar"></i> 
+                                                <i class="icofont-ui-calendar"></i>
                                                 <a href="blog-details.html">03-04-2021</a>
                                             </span>
                                                 <span>10 min read</span>
@@ -570,7 +405,7 @@
                                     <div class="single-archive-post" data-aos="fade-up">
                                         <div class="archive-post-thum">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/archive-post/02.jpg" alt="">
+                                                <img src="images/archive-post/02.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="archive-post-content">
@@ -579,7 +414,7 @@
                                             </h6>
                                             <div class="archive-post-meta">
                                                 <span class="post-date">
-                                                <i class="icofont-ui-calendar"></i> 
+                                                <i class="icofont-ui-calendar"></i>
                                                 <a href="blog-details.html">03-04-2021</a>
                                             </span>
                                                 <span>10 min read</span>
@@ -591,7 +426,7 @@
                                     <div class="single-archive-post" data-aos="fade-up">
                                         <div class="archive-post-thum">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/archive-post/03.jpg" alt="">
+                                                <img src="images/archive-post/03.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="archive-post-content">
@@ -600,7 +435,7 @@
                                             </h6>
                                             <div class="archive-post-meta">
                                                 <span class="post-date">
-                                                <i class="icofont-ui-calendar"></i> 
+                                                <i class="icofont-ui-calendar"></i>
                                                 <a href="blog-details.html">03-04-2021</a>
                                             </span>
                                                 <span>10 min read</span>
@@ -612,7 +447,7 @@
                                     <div class="single-archive-post" data-aos="fade-up">
                                         <div class="archive-post-thum">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/archive-post/04.jpg" alt="">
+                                                <img src="images/archive-post/04.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="archive-post-content">
@@ -621,7 +456,7 @@
                                             </h6>
                                             <div class="archive-post-meta">
                                                 <span class="post-date">
-                                                <i class="icofont-ui-calendar"></i> 
+                                                <i class="icofont-ui-calendar"></i>
                                                 <a href="blog-details.html">03-04-2021</a>
                                             </span>
                                                 <span>10 min read</span>
@@ -633,7 +468,7 @@
                                     <div class="single-archive-post" data-aos="fade-up">
                                         <div class="archive-post-thum">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/archive-post/06.jpg" alt="">
+                                                <img src="images/archive-post/06.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="archive-post-content">
@@ -642,7 +477,7 @@
                                             </h6>
                                             <div class="archive-post-meta">
                                                 <span class="post-date">
-                                                <i class="icofont-ui-calendar"></i> 
+                                                <i class="icofont-ui-calendar"></i>
                                                 <a href="blog-details.html">03-04-2021</a>
                                             </span>
                                                 <span>10 min read</span>
@@ -712,7 +547,7 @@
                                 <!-- Add Banner Area Start -->
                                 <div class="add-banner-area mt-5" data-aos="fade-up">
                                     <a href="blog-details.html">
-                                        <img src="assets/images/archive-post/add-banner-01.jpg" alt="">
+                                        <img src="images/archive-post/add-banner-01.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- Add Banner Area End -->
@@ -742,7 +577,7 @@
                             <!-- Single Most Populer Item Start -->
                             <div class="single-most-populer-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="most-populer-thum">
-                                    <img src="assets/images/banners/02-special-banner.jpg" alt="" />
+                                    <img src="images/banners/02-special-banner.jpg" alt="" />
                                 </a>
                                 <div class="most-populer-content">
                                     <div class="most-populer-post-author">
@@ -764,7 +599,7 @@
                             <!-- Single Most Populer Item Start -->
                             <div class="single-most-populer-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="most-populer-thum">
-                                    <img src="assets/images/banners/03-special-banner.jpg" alt="" />
+                                    <img src="images/banners/03-special-banner.jpg" alt="" />
                                 </a>
                                 <div class="most-populer-content">
                                     <div class="most-populer-post-author">
@@ -786,7 +621,7 @@
                             <!-- Single Most Populer Item Start -->
                             <div class="single-most-populer-item" data-aos="fade-up">
                                 <a href="blog-details.html" class="most-populer-thum">
-                                    <img src="assets/images/banners/04-special-banner.jpg" alt="" />
+                                    <img src="images/banners/04-special-banner.jpg" alt="" />
                                 </a>
                                 <div class="most-populer-content">
                                     <div class="most-populer-post-author">
@@ -827,7 +662,7 @@
                                     <div class="single-testimonial-item" data-aos="fade-up">
                                         <div class="testimonial-post-author">
                                             <div class="testimonial-author-image">
-                                                <img src="assets/images/author/testimonial-1.png" alt="">
+                                                <img src="images/author/testimonial-1.png" alt="">
                                             </div>
                                             <div class="testimonial-author-info">
                                                 <h4>Bansten Smith</h4>
@@ -848,7 +683,7 @@
                                     <div class="single-testimonial-item" data-aos="fade-up">
                                         <div class="testimonial-post-author">
                                             <div class="testimonial-author-image">
-                                                <img src="assets/images/author/testimonial-2.png" alt="">
+                                                <img src="images/author/testimonial-2.png" alt="">
                                             </div>
                                             <div class="testimonial-author-info">
                                                 <h4>Rosario Ferraro</h4>
@@ -869,7 +704,7 @@
                                     <div class="single-testimonial-item" data-aos="fade-up">
                                         <div class="testimonial-post-author">
                                             <div class="testimonial-author-image">
-                                                <img src="assets/images/author/testimonial-3.png" alt="">
+                                                <img src="images/author/testimonial-3.png" alt="">
                                             </div>
                                             <div class="testimonial-author-info">
                                                 <h4>Bansten Smith</h4>
@@ -890,7 +725,7 @@
                                     <div class="single-testimonial-item" data-aos="fade-up">
                                         <div class="testimonial-post-author">
                                             <div class="testimonial-author-image">
-                                                <img src="assets/images/author/testimonial-1.png" alt="">
+                                                <img src="images/author/testimonial-1.png" alt="">
                                             </div>
                                             <div class="testimonial-author-info">
                                                 <h4>Bansten Smith</h4>
@@ -922,253 +757,4 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--======  footer area =======-->
-    <footer class="footer-area footer-five">
-        <div class="footer-top-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/logo-5.png" alt="">
-                                </a>
-                            </div>
-                            <p class="footer-dec-text">Lorem Ipsum is simply dummy text
-                                the printing and typesetting industry
-                                has been the industry's standard
-                                text ever since.
-                            </p>
-                            <ul class="footer-socail-share">
-                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                <li><a href="#"><i class="icofont-skype"></i></a></li>
-                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4  col-md-6">
-                        <div class="footer-widget footer-subscribe-center">
-                            <div class="footer-widget-title">
-                                <h4 class="title">Subscribe</h4>
-                            </div>
-                            <div class="footer-subscribe-wrap">
-                                <div class="single-input">
-                                    <input type="text" placeholder="Your Name">
-                                </div>
-                                <div class="single-input">
-                                    <input type="email" placeholder="Email Address">
-                                </div>
-                                <div class="button-box">
-                                    <button class="btn-primary btn-bg-5 btn-large" type="submit">Subscribe Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="footer-menu-widget">
-                            <div class="single-footer-menu">
-                                <div class="footer-widget-title">
-                                    <h4 class="title">Company</h4>
-                                </div>
-                                <ul class="footer-widget-menu-list">
-                                    <li><a href="#!">About Us</a></li>
-                                    <li><a href="#!">Contact Us</a></li>
-                                    <li><a href="#!">Local Print Ads</a></li>
-                                    <li><a href="#!">FAQ’s</a></li>
-                                    <li><a href="#!">Careers</a></li>
-                                </ul>
-                            </div>
-                            <div class="single-footer-menu">
-                                <div class="footer-widget-title">
-                                    <h4 class="title">Quick Links</h4>
-                                </div>
-                                <ul class="footer-widget-menu-list">
-                                    <li><a href="#!">Privacy Policy</a></li>
-                                    <li><a href="#!">Discussion</a></li>
-                                    <li><a href="#!">Terms & Conditions</a></li>
-                                    <li><a href="#!">Customer Support</a></li>
-                                    <li><a href="#!">Course FAQ’s</a></li>
-                                </ul>
-                            </div>
-                            <div class="single-footer-menu">
-                                <div class="footer-widget-title">
-                                    <h4 class="title">Category</h4>
-                                </div>
-                                <ul class="footer-widget-menu-list">
-                                    <li><a href="#!">Lefestyle</a></li>
-                                    <li><a href="#!">Healthy</a></li>
-                                    <li><a href="#!">Restaurent</a></li>
-                                    <li><a href="#!">Travel Tips</a></li>
-                                    <li><a href="#!">Marketing</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-bottom-inner">
-                            <div class="copy-right-text mb-20">
-                                <p>© 2021 <a href="#">Bunzo</a>. Made with ❤️ by <a target="_blank" rel="noopener" href="https://hasthemes.com/">HasThemes</a></p>
-                            </div>
-                            <ul class="footer-bottom-menu-list  mb-20">
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">Status</a></li>
-                                <li><a href="#">Writers</a></li>
-                            </ul>
-                            <div class="scroll-button-buttom  mb-20">
-                                <span class="text">Jump to top</span>
-                                <a class="right-side-scroll-up" href="#">
-                                    <i class="icofont-long-arrow-up"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--=====  End of footer area ========-->
-
-
-
-
-
-
-
-
-    <!--====================  mobile menu overlay ====================-->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-        <div class="mobile-menu-overlay__inner">
-            <div class="mobile-menu-overlay__header">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 col-8">
-                            <!-- logo -->
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/logo.png" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-4">
-                            <!-- mobile menu content -->
-                            <div class="mobile-menu-content text-end">
-                                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile-menu-overlay__body">
-                <nav class="offcanvas-navigation">
-                    <ul>
-                        <li class="has-children">
-                            <a href="index.html">Home</a>
-                            <ul class="sub-menu">
-                                <li><a href="index-2.html"><span>Home Two</span></a></li>
-                                <li><a href="index-3.html"><span>Home Three</span></a></li>
-                                <li><a href="index-4.html"><span>Home Four</span></a></li>
-                                <li><a href="index-5.html"><span>Home Five</span></a></li>
-                                <li><a href="index-6.html"><span>Home Six</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about-us.html"><span>About</span></a></li>
-                        <li class="has-children">
-                            <a href="#">Category</a>
-                            <ul class="sub-menu">
-                                <li><a href="category.html"><span>Category List</span></a> </li>
-                                <li><a href="category-grid.html"><span>Category Grid</span></a> </li>
-                            </ul>
-                        </li>
-                        <li class="has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog-details.html"><span>Blog Details</span></a> </li>
-                                <li><a href="blog-details-two.html"><span>Blog Details Two</span></a> </li>
-                                <li><a href="error-404.html"><span>Error 404</span></a> </li>
-                                <li><a href="faq.html"><span>FAQ's</span></a> </li>
-                                <li><a href="author-post.html"><span>Author post</span></a> </li>
-                                <li><a href="register.html"><span>Register</span></a> </li>
-                                <li><a href="write-post.html"><span>Write Post</span></a> </li>
-                            </ul>
-                        </li>
-                        <li><a href="contact-us.html"><span>Contact </span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!--====================  End of mobile menu overlay  ====================-->
-
-
-
-
-
-
-
-
-    <!-- JS
-    ============================================ -->
-    <!-- Modernizer JS -->
-    <!-- <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script> -->
-
-    <!-- jQuery JS -->
-    <!-- <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script> -->
-
-    <!-- Bootstrap JS -->
-    <!-- <script src="assets/js/vendor/bootstrap.min.js"></script> -->
-
-    <!-- Light gallery JS -->
-    <!-- <script src="assets/js/plugins/lightgallery.min.js"></script> -->
-
-    <!-- Isotope JS -->
-    <!-- <script src="assets/js/plugins/isotope.min.js"></script> -->
-
-    <!-- Masonry JS -->
-    <!-- <script src="assets/js/plugins/masonry.min.js"></script> -->
-
-    <!-- ImagesLoaded JS -->
-    <!-- <script src="assets/js/plugins/images-loaded.min.js"></script> -->
-
-    <!-- Swiper Bundle JS -->
-    <!-- <script src="assets/js/plugins/swiper-bundle.min.js"></script> -->
-
-    <!-- AOS JS -->
-    <!-- <script src="assets/js/plugins/aos.js"></script> -->
-
-    <!-- Ajax JS -->
-    <!-- <script src="assets/js/plugins/ajax.mail.js"></script> -->
-
-    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
-    <script src="assets/js/vendor/vendor.min.js"></script>
-    <script src="assets/js/plugins/plugins.min.js"></script>
-
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-
-
-</body>
-
-
-<!-- Mirrored from template.hasthemes.com/bunzo/bunzo/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Oct 2021 17:26:40 GMT -->
-</html>
+</x-layout>
