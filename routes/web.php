@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +28,27 @@ Route::get('/category', function () {
 Route::get('/contact-us', function () {
     return view('user-side.contact-us');
 });
+
+Route::get('/login', function () {
+    return view('user-side.login');
+});
+
+Route::get('/sign-up', function () {
+    return view('user-side.register');
+});
+
+Route::get('/write-post',function(){
+    return view('user-side.write-post');
+});
+
+Route::get('/blog-post',function(){
+    return view('user-side.blog');
+});
+
+Route::get('/author-post',function(){
+    return view('user-side.author-post');
+});
+
+
+Route::post('/register',[UserController::class, 'store']);
+Route::post('/login/user',[UserController::class, 'session']);

@@ -65,7 +65,7 @@
                     <div class="col-lg-9 col-md-6 col-5">
                         <div class="header-five-left-side-box">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img src="images/logo/logo-5-black.png" alt="" />
                                 </a>
                             </div>
@@ -89,14 +89,22 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-7">
                         <div class="header-five-right-side">
-                            <div class="d-sm-block d-none">
-                                <a href="login.html" class="log-in-action-btn">
-                                    Log in
+                            @auth
+                                <div class="d-sm-block d-none">
+                                    <a href="/login" class="log-in-action-btn">
+                                        Log Out
+                                    </a>
+                                </div>
+                            @else
+                                <div class="d-sm-block d-none">
+                                    <a href="/login" class="log-in-action-btn">
+                                        Log in
+                                    </a>
+                                </div>
+                                <a href="/sign-up" class="sign-up-action-button btn-bg-5 btn-large btn">
+                                    Sign Up Free
                                 </a>
-                            </div>
-                            <a href="register.html" class="sign-up-action-button btn-bg-5 btn-large btn">
-                                Sign Up Free
-                            </a>
+                            @endauth
                             <!-- mobile menu -->
                             <div class="mobile-navigation-icon d-block d-lg-none" id="mobile-menu-trigger">
                                 <i></i>
