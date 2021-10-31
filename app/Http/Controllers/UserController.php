@@ -49,26 +49,9 @@ class UserController extends Controller
 
         $user->save();
 
-        // Auth::login($user);
+        Auth::login($user);
 
-        return redirect('/');
-    }
-
-    public function session(Request $request){
-        $attributes = $request->validate([
-            'username'=>'required',
-            'password'=>'required',
-        ]);
-
-        if(Auth::attempt($attributes)){
-            session()->regenerate();
-            return redirect('/');
-        }
-
-        return back()
-        ->withInput()
-        ->withErrors(['username'=>'Wrong Credentials!']);
-
+        return redirect('/')->with('success','Hey, welcome to the community!');
     }
 
     /**

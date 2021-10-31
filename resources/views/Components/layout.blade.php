@@ -25,7 +25,7 @@
         ============================================ -->
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="css/vendor/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 
     <!-- Gordita Fonts CSS -->
     <link rel="stylesheet" href="fonts/gordita-fonts.css" />
@@ -90,11 +90,12 @@
                     <div class="col-lg-3 col-md-6 col-7">
                         <div class="header-five-right-side">
                             @auth
-                                <div class="d-sm-block d-none">
-                                    <a href="/login" class="log-in-action-btn">
+                                <form class="d-sm-block d-none" action="/logout" method="POST">
+                                    @csrf
+                                    <button type="submit" class="log-in-action-btn btn-bg-5 btn-large btn">
                                         Log Out
-                                    </a>
-                                </div>
+                                    </button>
+                                </form>
                             @else
                                 <div class="d-sm-block d-none">
                                     <a href="/login" class="log-in-action-btn">
@@ -232,10 +233,15 @@
         </footer>
         <!--=====  End of footer area ========-->
 
+        <x-flash />
 
-
-
-
+        <script>
+            var alert = document.getElementById('alert');
+            alert.style.display="block";
+            setTimeout(() => {
+                alert.style.display="none";
+            }, 4000);
+        </script>
 
 
 
@@ -281,19 +287,17 @@
 
 
 
-
-
         <!-- JS
         ============================================ -->
         <!-- Modernizer JS -->
         <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
 
         <!-- jQuery JS -->
-        <!-- <script src="js/vendor/jquery-3.5.1.min.js"></script>
-        <script src="js/vendor/jquery-migrate-3.3.0.min.js"></script> -->
+        <script src="js/vendor/jquery-3.5.1.min.js"></script>
+        <script src="js/vendor/jquery-migrate-3.3.0.min.js"></script>
 
         <!-- Bootstrap JS -->
-        <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+        <script src="js/vendor/bootstrap.min.js"></script>
 
         <!-- Light gallery JS -->
         <!-- <script src="js/plugins/lightgallery.min.js"></script> -->

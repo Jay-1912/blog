@@ -26,7 +26,7 @@
                                     <input type="password" placeholder="Password" name="password">
                                     <div class="remember-forget-wrap mb-30">
                                         <div class="remember-wrap">
-                                            <input type="checkbox">
+                                            <input type="checkbox" name="remember_me">
                                             <p>Remember</p>
                                             <span class="checkmark"></span>
                                         </div>
