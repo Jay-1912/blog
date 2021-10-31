@@ -51,6 +51,15 @@
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://cdn.tiny.cloud/1/beltb73o3og889kh17m8r3fj1cor8y2fogx0yj0vcv6q84ut/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+    tinymce.init({
+        selector: 'textarea#editor',
+        menubar: false
+    });
+    </script>
+
 </head>
 
 

@@ -20,109 +20,65 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="title-write">
-                                <p>Write Your Title</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="write-content-box">
-                                <h6>How to think about quality</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="title-write">
-                                <p>Description</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="write-content-box">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industr
-                                    standard dummy text ever since the 1500s when anden unknown printer took a galley of type and scrambled it
-                                    to make a type specimen book. It has and survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially and unchanged.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="title-write">
-                                <p>Tags</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="write-content-box">
-                                <div class="post-write-tag">
-                                    <a href="#">Design</a>
-                                    <a href="#">Technology</a>
-                                    <a href="#">Business</a>
-                                    <a href="#">Marketing</a>
-                                    <a href="#">Company</a>
-                                    <a href="#">Creative</a>
+                    <form action="/post" method="POST">
+                        @csrf
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="title-write">
+                                    <label for="title">Write Your Title</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="title-write">
-                                <p>Content Privacy</p>
+                            <div class="col-lg-9">
+                                <h6><input type="text" name="title" class="write-content-box w-100"></h6>
                             </div>
+                            @error('title')
+                                <span style="color:red; font-size:small; font-weight:bold">{{$message}}</span>
+                            @enderror
                         </div>
-                        <div class="col-lg-9">
-                            <div class="write-content-box">
-                                <div class="post-write-trams">
-                                    <div class="single-trams">
-                                        <div class="title">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                            <label class="form-check-label" for="inlineRadio1">Age of consent</label>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the
-                                            standard dummy text ever since the 1500s when anden unknown printer took galley type and scrambled
-                                            to make a type specimen book. It has and survived not only five centuries, but also the leap into
-                                            typesetting, remaining essentially and unchanged.</p>
-                                    </div>
-                                    <div class="single-trams">
-                                        <div class="title">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <label class="form-check-label" for="inlineRadio2">Rights to your information</label>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the
-                                            standard dummy text ever since the 1500s when anden unknown printer took galley type and scrambled
-                                            to make a type specimen book. It has and survived not only five centuries, but also the leap into
-                                            typesetting, remaining essentially and unchanged.</p>
-                                    </div>
-                                    <div class="single-trams">
-                                        <div class="title">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                            <label class="form-check-label" for="inlineRadio3">Security and retention</label>
-                                        </div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the
-                                            standard dummy text ever since the 1500s when anden unknown printer took galley type and scrambled
-                                            to make a type specimen book. It has and survived not only five centuries, but also the leap into
-                                            typesetting, remaining essentially and unchanged.</p>
-                                    </div>
 
-                                </div>
-
-                            </div>
-
-                            <div class="conditon-buttom-wrap">
-                                <p class="conditon-note"><span class="title">Note:</span> Printing and typesetting industry lorem Ipsum has been the standard
-                                    dummy text ever since the 1500s when anden book.</p>
-
-                                <div class="button-box">
-                                    <a href="#" class="btn-large btn-primary">Publish Now <i class="icofont-long-arrow-right"></i></a>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="title-write">
+                                    <label for="desc">Description</label>
                                 </div>
                             </div>
+                            <div class="col-lg-9">
+                                <div class="write-content-box"><textarea name="desc" id="editor" class=" w-100"></textarea></div>
+                            </div>
+                            @error('desc')
+                                    <span style="color:red; font-size:small; font-weight:bold">{{$message}}</span>
+                            @enderror
                         </div>
-                    </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="title-write">
+                                    <label for="tag">Tags</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="write-content-box">
+                                    <select name="tag" id="">
+                                        @if ($tags)
+                                            <option value="" selected>Please select Tag</option>
+                                            @foreach ($tags as $tag)
+                                                <option value="{{$tag->id}}">{{$tag->name}}</option>
+                                            @endforeach
+                                        @endif
+                                    </select>
+                                </h6>
+                                @error('tag')
+                                    <span style="color:red; font-size:small; font-weight:bold">{{$message}}</span>
+                                @enderror
+                            </div>
+
+                            <div class="button-box">
+                                <button type="submit" class="btn-large btn-primary">Publish Now <i class="icofont-long-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+
+                    </form>
 
                 </div>
             </div>
