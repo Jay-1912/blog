@@ -21,9 +21,9 @@ class CreatePostsTable extends Migration
             $table->foreign('tag_id')->references('id')->on('tags')->cascadeOnDelete();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
-            $table->integer('bookmarks');
-            $table->integer('likes');
-            $table->integer('views');
+            $table->integer('bookmarks')->default('0');
+            $table->integer('likes')->default('0');
+            $table->integer('views')->default('0');
             $table->timestamps();
         });
     }
