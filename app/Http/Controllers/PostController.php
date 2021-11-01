@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,8 +17,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $tags = Tag::get();
-        return view('User-Side.write-post',\compact('tags'));
+        $posts = Post::latest()->get();
+        return view('User-Side.category-grid',\compact('posts'));
     }
 
     /**
@@ -27,7 +28,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $tags = Tag::get();
+        return view('User-Side.write-post',\compact('tags'));
     }
 
     /**
@@ -53,7 +55,7 @@ class PostController extends Controller
         // dd($post);
 
         $post->save();
-        return redirect('/')->with('success','Congratulations! Blog has been posted.');
+        return redirect('/posts')->with('success','Congratulations! Blog has been posted.');
     }
 
     /**

@@ -19,16 +19,16 @@
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="{{asset('images/favicon.png')}}">
 
     <!-- CSS
         ============================================ -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('css/vendor/bootstrap.min.css')}}">
 
     <!-- Gordita Fonts CSS -->
-    <link rel="stylesheet" href="fonts/gordita-fonts.css" />
+    <link rel="stylesheet" href="{{asset('fonts/gordita-fonts.css')}}" />
 
     <!-- Icofont CSS -->
     <!-- <link rel="stylesheet" href="css/vendor/icofont.min.css" /> -->
@@ -45,11 +45,11 @@
 
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
 
-    <link rel="stylesheet" href="css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="{{asset('css/vendor/vendor.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/plugins/plugins.min.css')}}">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <script src="https://cdn.tiny.cloud/1/beltb73o3og889kh17m8r3fj1cor8y2fogx0yj0vcv6q84ut/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -75,7 +75,7 @@
                         <div class="header-five-left-side-box">
                             <div class="logo">
                                 <a href="/">
-                                    <img src="images/logo/logo-5-black.png" alt="" />
+                                    <img src="{{asset('images/logo/logo-5-black.png')}}" alt="" />
                                 </a>
                             </div>
                             <div class="main-menu-area text-center ml-3">
@@ -88,7 +88,7 @@
                                             <a href="/about-us"><span>About</span></a>
                                         </li>
                                         <li>
-                                            <a href="/category"><span>Category</span></a>
+                                            <a href="/posts"><span>Category</span></a>
                                         </li>
                                         <li><a href="/contact-us"><span>Contact </span></a></li>
                                     </ul>
@@ -138,7 +138,7 @@
                             <div class="footer-widget">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="images/logo/logo-5.png" alt="">
+                                        <img src="{{asset('images/logo/logo-5.png')}}" alt="">
                                     </a>
                                 </div>
                                 <p class="footer-dec-text">Lorem Ipsum is simply dummy text
@@ -302,11 +302,11 @@
         <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
 
         <!-- jQuery JS -->
-        <script src="js/vendor/jquery-3.5.1.min.js"></script>
-        <script src="js/vendor/jquery-migrate-3.3.0.min.js"></script>
+        <script src="{{asset('js/vendor/jquery-3.5.1.min.js')}}"></script>
+        <script src="{{asset('js/vendor/jquery-migrate-3.3.0.min.js')}}"></script>
 
         <!-- Bootstrap JS -->
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="{{asset('js/vendor/bootstrap.min.js')}}"></script>
 
         <!-- Light gallery JS -->
         <!-- <script src="js/plugins/lightgallery.min.js"></script> -->
@@ -330,12 +330,12 @@
         <!-- <script src="js/plugins/ajax.mail.js"></script> -->
 
         <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
-        <script src="js/vendor/vendor.min.js"></script>
-        <script src="js/plugins/plugins.min.js"></script>
+        <script src="{{asset('js/vendor/vendor.min.js')}}"></script>
+        <script src="{{asset('js/plugins/plugins.min.js')}}"></script>
 
 
         <!-- Main JS -->
-        <script src="js/main.js"></script>
+        <script src="{{asset('js/main.js')}}"></script>
 
 
     </body>

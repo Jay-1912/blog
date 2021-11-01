@@ -20,7 +20,7 @@
                         </div>
                     </div>
 
-                    <form action="/post" method="POST">
+                    <form action="/add/post" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-lg-3">

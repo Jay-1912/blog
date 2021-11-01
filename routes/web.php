@@ -3,7 +3,11 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\TagController;
+use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
+use Prophecy\Exception\Doubler\ReturnByReferenceException;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +26,6 @@ Route::get('/', function () {
 
 Route::get('/about-us', function () {
     return view('user-side.about-us');
-});
-
-Route::get('/category', function () {
-    return view('user-side.category-grid');
 });
 
 Route::get('/contact-us', function () {
@@ -58,5 +58,18 @@ Route::post('/logout',[SessionController::class, 'destroy']);
 
 
 //Post
-Route::get('/write-post',[PostController::class, 'index']);
-Route::post('/post',[PostController::class, 'store']);
+Route::get('/write-post',[PostController::class, 'create']);
+Route::get('/posts',[PostController::class, 'index']);
+Route::post('/add/post',[PostController::class, 'store']);
+Route::get('/posts/{post:title}',function(Post $post){
+    return view('User-Side.blog',[
+        'post' => $post
+    ]);
+});
+
+//Tags
+Route::get('/tags/{tag:name}',function(Tag $tag){
+    return view('User-Side.category-grid',[
+        'posts'=>$tag->post
+    ]);
+});

@@ -11,105 +11,27 @@
 
                                 <div class="blog-details-two-post-meta">
                                     <span class="blog-details-two-post-author">
-                                    By <a href="#">Walter Houston</a>
+                                    By <a href="#">{{$post->authour->username}}</a>
                                 </span>
                                     <span class="post-date">
-                                    <a href="#">03 April, 2021</a>
+                                    <a href="#">{{$post->created_at->diffForHumans()}}</a>
                                 </span>
                                     <span>10 min read</span>
                                 </div>
-                                <h2 class="blog-details-two-post-title">Elite Licenser is a software license manager
-                                    plugin for WordPress to protect your product</h2>
+                                <h2 class="blog-details-two-post-title">{{$post->title}}</h2>
 
                                 <div class="blog-details-two-tags">
-                                    <a href="#" class="btn-large wordpress">WordPress</a>
-                                    <a href="#" class="btn-large woocommerce">WooCommerce</a>
-                                    <a href="#" class="btn-large magento">Magento</a>
-                                    <a href="#" class="btn-large laravel">Laravel</a>
+                                    <a href="#" class="btn-large wordpress">{{$post->tag->name}}</a>
                                 </div>
 
                             </div>
-                            <div class="blog-details-post-image mt-5  mb-5">
-                                <img src="assets/images/blog/blog-details-2.jpg" alt="">
-                            </div>
+                            {{-- <div class="blog-details-post-image mt-5  mb-5">
+                                <img src="{{asset('images/blog/blog-details-2.jpg')}}" alt="">
+                            </div> --}}
 
                             <div class="blog-details-two-post-text section-space--pb_80">
                                 <div class="col-lg-10 m-auto">
-                                    <h3 class="mb-5 title">Create a custom checkout page in minutes and Increase your sales with WooLentor</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu stry's standard dummy
-                                        text ever since the 1500s when an unknown prnter took a galley of type and scramb has been text ever since them 1500s unknown
-                                        type and scramb led it to make a type specimen book.</p>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.</p>
-
-                                    <div class="table-content mb-5">
-                                        <h3 class="title mb-30">Table of Content:</h3>
-
-                                        <ul class="table-content-list">
-                                            <li class="table-content-item"> It was popularised in the 1960s with the release of Letraset sheets containing</li>
-                                            <li class="table-content-item"> Many desktop publishing packages and web page editors now use</li>
-                                            <li class="table-content-item"> It was popularised in the 1960s with the release of Letraset sheets containing</li>
-                                            <li class="table-content-item"> Many desktop publishing packages and web page editors now use</li>
-                                            <li class="table-content-item"> It was popularised in the 1960s with the release of Letraset sheets containing</li>
-                                        </ul>
-
-                                    </div>
-
-                                    <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.
-                                    </p>
-                                    <h3 class="title mb-3">Our company fails the real world test in all kinds of ways.</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu stry's standard dummy
-                                        text ever since the 1500s when an unknown prnter took a galley of type and scramb has been text ever since them 1500s unknown
-                                        type and scramb led it to make a type specimen book.</p>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.</p>
-
-                                    <div class="blog-details-image mt-5  mb-5">
-                                        <img src="assets/images/blog/blog-details-3.jpg" alt="">
-                                    </div>
-
-                                    <h3 class="title mb-20">Well, that wasn’t the only unconventional thing 37Signals did
-                                        on their way up.</h3>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.
-                                    </p>
-
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.</p>
-
-                                    <blockquote class="blockquote-box-two">
-                                        <h4><span class="bold">2,83k People</span> Receive Our Weekly
-                                            WordPress Related Newsletter.</h4>
-                                    </blockquote>
-
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.</p>
-
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
-                                        humour, or randomised words which don't look even slightly believable. If you are going to use a passage of orem Ipsum, you need
-                                        to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem psum generators on the Internet tend
-                                        predefined chunks as necessary, making this the first true generator on the Internet. It uses dictionary of over Latin words combnes
-                                        with a handful of model sentence structures.</p>
+                                    <div class="mt-5 mb-5" style="font-family: Gordita;">{!!$post->desc!!}</div>
 
                                     <div class="blog-details-two-share-area">
                                         <div class="share-title">
@@ -155,7 +77,7 @@
                                 <!-- Single Most Populer Item Start -->
                                 <div class="single-most-populer-item">
                                     <a href="#!" class="most-populer-thum">
-                                        <img src="assets/images/banners/02-special-banner.jpg" alt="">
+                                        <img src="{{asset('images/banners/02-special-banner.jpg')}}" alt="">
                                     </a>
                                     <div class="most-populer-content">
                                         <div class="most-populer-post-author">
@@ -177,7 +99,7 @@
                                 <!-- Single Most Populer Item Start -->
                                 <div class="single-most-populer-item">
                                     <a href="#!" class="most-populer-thum">
-                                        <img src="assets/images/banners/03-special-banner.jpg" alt="">
+                                        <img src="{{asset('images/banners/03-special-banner.jpg')}}" alt="">
                                     </a>
                                     <div class="most-populer-content">
                                         <div class="most-populer-post-author">
@@ -199,7 +121,7 @@
                                 <!-- Single Most Populer Item Start -->
                                 <div class="single-most-populer-item">
                                     <a href="#!" class="most-populer-thum">
-                                        <img src="assets/images/banners/04-special-banner.jpg" alt="">
+                                        <img src="{{asset('images/banners/04-special-banner.jpg')}}" alt="">
                                     </a>
                                     <div class="most-populer-content">
                                         <div class="most-populer-post-author">
@@ -238,7 +160,7 @@
                                         <div class="comment-2">
                                             <div class="comment-author-info">
                                                 <div class="comment-author vcard">
-                                                    <img alt="" src="assets/images/comments/comments-1.png">
+                                                    <img alt="" src="{{asset('images/comments/comments-1.png')}}">
                                                 </div>
                                                 <div class="comment-content">
                                                     <div class="meta">
@@ -263,7 +185,7 @@
                                                 <div class="comment-reply-wrap">
                                                     <div class="comment-author-info">
                                                         <div class="comment-author vcard">
-                                                            <img alt="" src="assets/images/comments/comments-2.png">
+                                                            <img alt="" src="{{asset('images/comments/comments-2.png')}}">
                                                         </div>
                                                         <div class="comment-content">
                                                             <div class="meta">
@@ -288,7 +210,7 @@
                                                 <div class="comment-reply-wrap">
                                                     <div class="comment-author-info">
                                                         <div class="comment-author vcard">
-                                                            <img alt="" src="assets/images/comments/comments-3.png">
+                                                            <img alt="" src="{{asset('images/comments/comments-3.png')}}">
                                                         </div>
                                                         <div class="comment-content">
                                                             <div class="meta">
