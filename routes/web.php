@@ -59,7 +59,11 @@ Route::post('/logout',[SessionController::class, 'destroy']);
 
 //Post
 Route::get('/write-post',[PostController::class, 'create']);
-Route::get('/posts',[PostController::class, 'index']);
+Route::get('/posts',function(Post $post){
+    return view('User-Side.blog',[
+        'posts' => $post::all()
+    ]);
+});
 Route::post('/add/post',[PostController::class, 'store']);
 Route::get('/posts/{post:title}',function(Post $post){
     return view('User-Side.blog',[

@@ -14,7 +14,7 @@
                                     <!-- Single Following Post Start -->
                                     <div class="single-following-post" data-aos="fade-up">
                                         <a href="blog-details.html" class="following-post-thum">
-                                            <img src="images/blog/01.jpg" alt="">
+                                            <img src="{{asset('images/blog/01.jpg')}}" alt="">
                                         </a>
                                         <div class="following-post-content">
                                             <div class="following-blog-post-top">
@@ -39,8 +39,8 @@
                                                     <span>10 min read</span>
                                                 </div>
                                                 <div class="post-meta-right-side">
-                                                    <a href="#"><img src="images/icons/small-bookmark.png" alt="" /></a>
-                                                    <a href="#"><img src="images/icons/heart.png" alt="" /></a>
+                                                    <a href="#"><img src="{{asset('images/icons/small-bookmark.png')}}" alt="" /></a>
+                                                    <a href="#"><img src="{{asset('images/icons/heart.png')}}" alt="" /></a>
                                                 </div>
                                             </div>
                                         </div>
