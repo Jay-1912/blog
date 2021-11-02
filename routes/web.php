@@ -9,6 +9,8 @@ use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
 use Prophecy\Exception\Doubler\ReturnByReferenceException;
 
+use function Ramsey\Uuid\v1;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +48,14 @@ Route::get('/posts/{post:title}',function(Post $post){
         'post' => $post
     ]);
 });
+Route::get('/post/edit/{post:title}',function(Post $post){
+    return view('User-Side.write-post',[
+        'post'=> $post,
+        'tags'=> Tag::all()
+    ]);
+});
+
+Route::post('/update/{post:id}',[PostController::class, 'update']);
 
 //Tags
 Route::get('/tags/{tag:name}',[TagController::class, 'index']);

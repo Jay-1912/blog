@@ -43,7 +43,7 @@ class UserController extends Controller
         ]);
 
         $user = new User;
-        $user->username = ucwords($user->username);
+        $user->username = ucwords($request->username);
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
 

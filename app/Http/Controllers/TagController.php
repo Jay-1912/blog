@@ -15,7 +15,9 @@ class TagController extends Controller
     public function index(Tag $tag)
     {
         $posts = $tag->post;
-        return view('User-Side.category-grid',\compact('posts'));
+        $currTag = $tag;
+        $tags = Tag::latest()->get();
+        return view('User-Side.category-grid',\compact('posts','tags','currTag'));
     }
 
     /**

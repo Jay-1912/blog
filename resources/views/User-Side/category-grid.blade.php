@@ -4,6 +4,17 @@
 
     <div id="main-wrapper">
         <div class="site-wrapper-reveal">
+
+            <div class="container d-flex align-items-center justify-content-center">
+                @if($tags)
+                    @foreach ($tags as $tag)
+                    <div class="blog-details-two-tags" style="display: inline">
+                        <a href="/tags/{{$tag->name}}" class="btn-large {{ isset($currTag) && ($currTag==$tag) ? 'laravel' : 'wordpress' }}">{{$tag->name}}</a>
+                    </div>
+                    @endforeach
+                @endif
+            </div>
+
             <!-- Blog Details Wrapper Start -->
             <div class="blog-details-wrapper section-space--ptb_80">
                 <div class="container">

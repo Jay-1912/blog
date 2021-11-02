@@ -71,7 +71,7 @@
         <div class="header-bottom-area bg-gray">
             <div class="container-fluid container-custom-150">
                 <div class="row align-items-center">
-                    <div class="col-lg-9 col-md-6 col-5">
+                    <div class="col-lg-8 col-md-6 col-5">
                         <div class="header-five-left-side-box">
                             <div class="logo">
                                 <a href="/">
@@ -96,9 +96,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-7">
+                    <div class="col-lg-4 col-md-6 col-12">
                         <div class="header-five-right-side">
                             @auth
+                                <div class="header-mid-right-side me-3">
+                                    <a href="javascript:void(0)" id="search-overlay-trigger" class="single-action-item">
+                                        <img src="{{asset('images/icons/search.png')}}" alt="">
+                                    </a>
+                                    <a href="#" class="single-action-item">
+                                        <img src="{{asset('images/icons/notification.png')}}" alt="">
+                                    </a>
+                                    <a href="#" class="single-action-item">
+                                        <img src="{{asset('images/icons/bookmark.png')}}" alt="">
+                                    </a>
+                                    <a href="register.html" class="single-action-item">
+                                        <img src="{{asset('images/icons/user.png')}}" alt="">
+                                    </a>
+                                </div>
                                 <form class="d-sm-block d-none" action="/logout" method="POST">
                                     @csrf
                                     <button type="submit" class="log-in-action-btn btn-bg-5 btn-large btn">
@@ -241,6 +255,33 @@
             </div>
         </footer>
         <!--=====  End of footer area ========-->
+
+        <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+
+        <div class="search-overlay__header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <!-- search content -->
+                        <div class="search-content text-end">
+                            <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of search overlay  ====================-->
 
         <x-flash />
 

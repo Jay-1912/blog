@@ -20,7 +20,8 @@ class PostController extends Controller
     {
 
         $posts = Post::latest()->get();
-        return view('User-Side.category-grid',\compact('posts'));
+        $tags = Tag::latest()->get();
+        return view('User-Side.category-grid',\compact('posts','tags'));
     }
 
     /**
@@ -45,11 +46,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'title' => 'required|max:255',
-        //     'desc' => 'required',
-        //     'tag_id' => 'required'
-        // ]);
+        $request->validate([
+            'title' => 'required|max:255',
+            'desc' => 'required',
+            'tag_id' => 'required'
+        ]);
 
         $post = new Post;
         $post->title = $request->title;
@@ -60,7 +61,7 @@ class PostController extends Controller
         // dd($post);
 
         $post->save();
-        return redirect('/posts')->with('success','Congratulations! Blog has been posted.');
+        return redirect('/blog-posts')->with('success','Congratulations! Blog has been posted.');
     }
 
     /**
@@ -92,9 +93,24 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'title' => 'required|max:255',
+            'desc' => 'required',
+            'tag_id' => 'required'
+        ]);
+
+        $post = Post::find($id);
+        $post->title = $request->title;
+        $post->desc = $request->desc;
+        $post->tag_id = $request->tag;
+        $post->user_id = Auth::id();
+
+        dd($post);
+
+        // $post->save();
+        // return redirect('/blog-posts')->with('success','Congratulations! Blog has been posted.');
     }
 
     /**

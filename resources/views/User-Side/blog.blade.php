@@ -6,6 +6,14 @@
             <div class="blog-details-two-wrapper">
                 <div class="container">
                     <div class="row">
+                        @if($post->authour->id == auth()->id())
+                            <div class="col-lg-10 m-auto mt-5">
+                                    <ul class="social-share-area">
+                                        <li><a href="/post/edit/{{$post->title}}"><i class="icofont-edit-alt"></i></a></li>
+                                        <li><a href="/post/delete/{{$post->id}}"><i class="icofont-ui-delete"></i></a></li>
+                                    </ul>
+                            </div>
+                        @endif
                         <div class="col-lg-12 col-md-12">
                             <div class="blog-details-two-header">
 
