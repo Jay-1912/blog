@@ -88,7 +88,7 @@
                                             <a href="/about-us"><span>About</span></a>
                                         </li>
                                         <li>
-                                            <a href="/posts"><span>Category</span></a>
+                                            <a href="/blog-posts"><span>Category</span></a>
                                         </li>
                                         <li><a href="/contact-us"><span>Contact </span></a></li>
                                     </ul>

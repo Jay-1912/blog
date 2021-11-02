@@ -21,7 +21,7 @@
                                 <h2 class="blog-details-two-post-title">{{$post->title}}</h2>
 
                                 <div class="blog-details-two-tags">
-                                    <a href="#" class="btn-large wordpress">{{$post->tag->name}}</a>
+                                    <a href="/tags/{{$post->tag->name}}" class="btn-large wordpress">{{$post->tag->name}}</a>
                                 </div>
 
                             </div>

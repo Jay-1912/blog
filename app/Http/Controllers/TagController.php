@@ -12,9 +12,10 @@ class TagController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Tag $tag)
     {
-
+        $posts = $tag->post;
+        return view('User-Side.category-grid',\compact('posts'));
     }
 
     /**

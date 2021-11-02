@@ -20,33 +20,13 @@ use Prophecy\Exception\Doubler\ReturnByReferenceException;
 |
 */
 
-Route::get('/', function () {
-    return view('user-side.index');
-});
-
-Route::get('/about-us', function () {
-    return view('user-side.about-us');
-});
-
-Route::get('/contact-us', function () {
-    return view('user-side.contact-us');
-});
-
-Route::get('/sign-up', function () {
-    return view('user-side.register');
-});
-
-Route::get('/write-post',function(){
-    return view('user-side.write-post');
-});
-
-Route::get('/blog-post',function(){
-    return view('user-side.blog');
-});
-
-Route::get('/author-post',function(){
-    return view('user-side.author-post');
-});
+Route::get('/', function () {return view('user-side.index');});
+Route::get('/about-us', function () {return view('user-side.about-us');});
+Route::get('/contact-us', function () {return view('user-side.contact-us');});
+Route::get('/sign-up', function () {return view('user-side.register');});
+Route::get('/write-post',function(){return view('user-side.write-post');});
+Route::get('/blog-post',function(){return view('user-side.blog');});
+Route::get('/author-post',function(){return view('user-side.author-post');});
 
 
 Route::post('/register',[UserController::class, 'store']);
@@ -58,12 +38,8 @@ Route::post('/logout',[SessionController::class, 'destroy']);
 
 
 //Post
-Route::get('/write-post',[PostController::class, 'create']);
-Route::get('/posts',function(Post $post){
-    return view('User-Side.blog',[
-        'posts' => $post::all()
-    ]);
-});
+Route::get('/write-post',[PostController::class, 'create'])->middleware('auth');
+Route::get('/blog-posts',[PostController::class, 'index']);
 Route::post('/add/post',[PostController::class, 'store']);
 Route::get('/posts/{post:title}',function(Post $post){
     return view('User-Side.blog',[
@@ -72,8 +48,4 @@ Route::get('/posts/{post:title}',function(Post $post){
 });
 
 //Tags
-Route::get('/tags/{tag:name}',function(Tag $tag){
-    return view('User-Side.category-grid',[
-        'posts'=>$tag->post
-    ]);
-});
+Route::get('/tags/{tag:name}',[TagController::class, 'index']);

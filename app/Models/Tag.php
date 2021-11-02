@@ -9,7 +9,7 @@ class Tag extends Model
 {
     use HasFactory;
 
-    public function Tag(){
+    public function post(){
         return $this->hasMany('App\Models\Post');
     }
 }

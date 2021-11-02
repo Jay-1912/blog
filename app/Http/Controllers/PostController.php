@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Models\User;
+use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,6 +18,7 @@ class PostController extends Controller
      */
     public function index()
     {
+
         $posts = Post::latest()->get();
         return view('User-Side.category-grid',\compact('posts'));
     }
@@ -28,6 +30,9 @@ class PostController extends Controller
      */
     public function create()
     {
+        // if(!Auth::check()){
+        //     return redirect('/login')->with('warning','Hey, You have to Login first!');
+        // }
         $tags = Tag::get();
         return view('User-Side.write-post',\compact('tags'));
     }
