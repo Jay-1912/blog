@@ -58,10 +58,10 @@ class PostController extends Controller
         $post->tag_id = $request->tag;
         $post->user_id = Auth::id();
 
-        // dd($post);
+        dd($post);
 
-        $post->save();
-        return redirect('/blog-posts')->with('success','Congratulations! Blog has been posted.');
+        // $post->save();
+        // return redirect('/blog-posts')->with('success','Congratulations! Blog has been posted.');
     }
 
     /**

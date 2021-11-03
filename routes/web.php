@@ -48,12 +48,12 @@ Route::get('/posts/{post:title}',function(Post $post){
         'post' => $post
     ]);
 });
-Route::get('/post/edit/{post:title}',function(Post $post){
-    return view('User-Side.write-post',[
-        'post'=> $post,
-        'tags'=> Tag::all()
-    ]);
-});
+// Route::get('/post/edit/{post:title}',function(Post $post){
+//     return view('User-Side.write-post',[
+//         'post'=> $post,
+//         'tags'=> Tag::all()
+//     ]);
+// });
 
 Route::post('/update/{post:id}',[PostController::class, 'update']);
 
